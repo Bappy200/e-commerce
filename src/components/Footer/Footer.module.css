@@ -1,0 +1,40 @@
+.footerSection{
+    color: #ffff;
+}
+.footerContent h3{
+    font-size: 18px;
+    font-weight: 500;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+}
+.footerContent p{
+    font-size: 14px;
+
+}
+
+.footerContent ul li{
+    padding-bottom: 10px;
+}
+.footerContent ul li a{ 
+    color: #ffff;
+    transition: all .4s;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.footerContent ul li a:hover{
+    color: #FFC022;
+}
+.soclaLinks{
+    padding-bottom: 20px;
+}
+.soclaLinks h6{
+   font-size: 15px;
+   padding-bottom: 20px;
+   text-transform: uppercase;
+}
+.soclaLinks ul {
+    display: flex;
+}
+.soclaLinks ul li{
+    margin-right: 10px;
+}

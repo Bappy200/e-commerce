@@ -1,0 +1,27 @@
+.container{
+    padding: 50px 0px;
+}
+.global-btn{
+    padding: 10px 15px;
+    color: #fff;
+    background: #FF1F76;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    width: 150px;
+}
+ul{
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+}

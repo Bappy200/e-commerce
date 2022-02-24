@@ -1,0 +1,73 @@
+.headerSection{
+    background: rgb(250, 249, 249);
+    box-shadow: 3px 1px 4px 1px #dddddd70;
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 100px;
+    z-index: 99999;
+}
+.logoArea{
+    width: 30%;
+}
+.logoArea a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.menu{
+    width: 70%;
+    display: flex;
+    justify-content: flex-end;
+}
+.shopingIcon{
+    cursor: pointer;
+    position: relative;
+}
+.shopingIcon svg{
+    color: #FFC022;
+    font-size: 30px;
+}
+.shopingIcon span{
+    position: absolute;
+    top: 1px;
+    right: 0%;
+    transform: translateY(-50%);
+    background: #FF267B;
+    color: #ffff;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+
+@media only screen and (max-width: 600px) {
+    .headerSection{
+        padding: 0px 50px;
+    }
+    .menu,
+    .logoArea{
+        width: 50%;
+    }
+    
+    .logoArea a{
+        font-size: 13px;
+    }
+    .shopingIcon svg{
+        font-size: 20px;
+    }
+    .shopingIcon span{
+        width: 10px;
+        height: 10px;
+        font-size: 8px;
+    }
+  }

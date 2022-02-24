@@ -1,0 +1,42 @@
+.sliderSection{
+    padding: 0px 100px;
+    margin-top: 60px;
+    
+}
+.slideBox{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+.sliderTextBox, .sliderImageBox{
+    width: 50%;
+}
+.sliderTextBox{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.sliderImageBox img{
+    width: 100%;
+}
+.sliderTextBox h2{
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 700;
+    color: rgb(20, 20, 20);
+}
+.sliderTextBox p{
+    text-transform: capitalize;
+    font-size: 16px;
+    color: rgb(20, 20, 20);
+}
+.control-prev{
+    top: 50%;
+    left: -20px;
+    width: 20px;
+    height: 50px;
+    background: #FFBE22;
+    
+}

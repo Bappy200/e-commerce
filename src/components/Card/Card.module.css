@@ -1,0 +1,47 @@
+.productCard{
+    background: #ffffff;
+    border-radius: 5px;
+    padding: 15px;
+    transition: all linear .4s;
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%);
+    
+}
+.cardImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 15px;
+    overflow: hidden;
+}
+.cardImage img{
+    width: 200px;
+    transition: all linear .4s;
+    cursor: pointer;
+}
+.productCard:hover .cardImage img{
+    transform: scale(1.1);
+}
+.cardBody h4{
+    width: 200px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(7, 6, 6);
+}
+.buyContent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.buyContent p{
+    width: 200px;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(7, 6, 6);
+}
+.buyContent svg{
+    color: #FFC022;
+    font-size: 18px;
+    cursor: pointer;
+}
