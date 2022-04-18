@@ -12,7 +12,6 @@ function Event() {
         }, 1000)
         return ()=> clearTimeout(timer);
     });
-    console.log(eventTime);
   return (
     <Container>
         <div className={classes.eventSection}>

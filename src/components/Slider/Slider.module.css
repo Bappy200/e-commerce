@@ -40,3 +40,29 @@
     background: #FFBE22;
     
 }
+
+@media (max-width: 576px) { 
+    .sliderSection{
+        padding: 0px 50px;
+    }
+    .sliderTextBox, .sliderImageBox{
+        width: 100%;
+    }
+    .slideBox{
+        flex-direction: column-reverse;
+    }
+    .sliderTextBox h2{
+        font-size: 28px;
+    }
+ }
+
+/* // Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { 
+
+ }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... } */
