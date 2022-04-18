@@ -2,8 +2,6 @@ import React, { useContext } from 'react'
 import { Alert, Container, Row } from 'react-bootstrap'
 import { MyContext } from '../../App'
 import Card from '../Card/Card'
-import Event from '../Event/Event'
-import Layout from '../Layout/Layout'
 import NavigationBar from '../NavigationBar/NavigationBar'
 import UserForm from '../UserForm/UserForm'
 import emptyImage from "../../assects/panda-commerce/orderEmpty.jpg"
