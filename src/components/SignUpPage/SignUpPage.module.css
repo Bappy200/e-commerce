@@ -1,0 +1,82 @@
+.signUpSection{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.signUpFrom{
+    width: 750px;
+    background: #ffc022;
+    padding: 25px;
+    box-shadow: 1px 1px 1px 1px rgba(221, 221, 221, 0.534);
+    border-radius: 10px;
+}
+.signUpFrom h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    color: #ffff;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.twoInputField{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+.inputArea{
+    flex: 1;
+}
+.inputArea p{
+    color: rgb(194, 12, 12);
+    margin-left: 10px;
+    text-transform: capitalize;
+    font-size: 14px;
+}
+
+.inputField{
+    border: 1px solid rgba(255, 255, 255, 0.867);
+    padding: 10px 10px;
+    margin: 15px 10px 0px 10px;
+    
+    border-radius: 5px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.inputField svg{
+    font-size: 14px;
+    color: #fff;
+    margin-right: 10px;
+}
+.inputField input{
+    border: none;
+    outline: none;
+    background: none;
+    color: #fff;
+}
+.inputField input::placeholder{
+    font-size: 14px;
+    color: #fff;
+}
+.haveAccount a{
+    color: rgb(37, 37, 37);
+    font-size: 13px;
+    text-transform: capitalize;
+    text-align: right;
+    display: block;
+    transition: .4s all linear;
+}
+.haveAccount a:hover{
+    text-decoration:underline;
+}
+
+@media (max-width: 768px) { 
+    .inputField{
+        width: 100%;
+        margin: 5px;
+    }
+
+}

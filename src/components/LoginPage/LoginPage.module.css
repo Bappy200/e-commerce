@@ -1,0 +1,104 @@
+.LoginSection{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginContainer{
+    background: #ffc022;
+    padding: 25px;
+    box-shadow: 1px 1px 1px 1px rgba(221, 221, 221, 0.534);
+    border-radius: 10px;
+}
+.loginContainer h2{
+    text-align: center;
+    font-size: 30px;
+    color: #ffff;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.inputField{
+    border: 1px solid rgba(255, 255, 255, 0.867);
+    padding: 10px 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.inputField svg{
+    font-size: 14px;
+    color: #fff;
+    margin-right: 10px;
+}
+.inputField input{
+    border: none;
+    outline: none;
+    background: none;
+    color: #fff;
+}
+.inputField input::placeholder{
+    font-size: 14px;
+    color: #fff;
+}
+
+.createAccount{
+    display: flex;
+    justify-content: flex-end;  
+}
+.createAccount a{
+    color: rgb(37, 37, 37);
+    font-size: 13px;
+    text-transform: capitalize;
+    text-align: right;
+    transition: .4s all linear;
+}
+.createAccount a:hover{
+    text-decoration:underline;
+}
+.button_area{
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px;
+}
+.login_button{
+    padding: 10px !important;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    
+}
+.or{
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #ffff;
+    font-weight: 700;
+    margin-bottom: 20px;
+    display: block;
+    text-align: center;
+}
+.otherLoingSystem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loginSystem{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #FF1F76;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.loginSystem svg{
+    color: #ffff;
+    font-size: 15px;
+}
