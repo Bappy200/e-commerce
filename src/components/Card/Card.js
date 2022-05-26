@@ -1,27 +1,26 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import { Col } from 'react-bootstrap'
-import image from '../../assects/categories/watch.png'
+import {Link} from "react-router-dom"
 import classes from './Card.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCartShopping,faXmark } from '@fortawesome/free-solid-svg-icons'
-import { MyContext } from '../../App'
+import { faCartShopping } from '@fortawesome/free-solid-svg-icons'
 
-function Card({isDeleteId}) {
-  const [orders, setOrders] = useContext(MyContext);
-  console.log(orders)
+function Card({_id,title, price, color, desc, img}) {
 
-  const filterItem = orders.filter(item => item !== isDeleteId);
+  console.log(_id);
   return (
     <Col sm={12} md={4}>
       <div className={classes.productCard}>
-          <div className={classes.cardImage}>
-            <img src={image} alt="productImage"/>
-          </div>
+          <Link to={`/productDetails/${_id}`}>
+            <div className={classes.cardImage}>
+              <img src={img} alt="imag"/>
+            </div>
+          </Link>
           <div className={classes.cardBody}>
-            <h4>Product Name</h4>
+            <h4>{title}</h4>
             <div className={classes.buyContent}>
-              <p>price : 30$</p>
-              {isDeleteId ? <FontAwesomeIcon onClick={()=> setOrders(filterItem)} icon={faXmark}/> :  <FontAwesomeIcon onClick={()=> setOrders((order)=>[...order, Math.random() * (3000 - 0) + 0])} icon={faCartShopping}/>}
+              <p>price : {price}$</p>
+              <FontAwesomeIcon icon={faCartShopping}/>
             </div>
           </div>
       </div>

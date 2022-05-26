@@ -50,6 +50,32 @@
     font-size: 14px;
 }
 
+.currentUser{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.currentUser span{
+    text-transform: capitalize;
+    font-size: 14px;
+    color: #FF267B;
+}
+
+.links a{
+    padding-left: 10px;
+    text-transform: capitalize;
+    font-size: 14px;
+}
+
+.loguot{
+    font-size: 14px;
+    font-weight: 400;
+    padding: 10px !important;
+    width: 80px;
+    margin: 0px 10px;
+}
+
 @media only screen and (max-width: 600px) {
     .headerSection{
         padding: 0px 50px;
@@ -69,5 +95,12 @@
         width: 10px;
         height: 10px;
         font-size: 8px;
+    }
+    .loguot{
+        font-size: 12px;
+        font-weight: 400;
+        padding: 10px;
+        width: 70px;
+        margin: 0px 5px;
     }
   }

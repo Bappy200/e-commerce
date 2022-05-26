@@ -1,0 +1,32 @@
+.title{
+    font-size: 30px;
+    font-weight: 700;
+    margin: 20px;
+}
+.filterContainer{
+    display: flex;
+    justify-content: space-between;
+}
+.filter{
+    margin: 10px 20px;
+}
+.filter h4{
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.filter select{
+    padding: 10px;
+    margin-right: 20px;
+    border: 1px solid #ddd;
+    outline: none;
+}
+
+@media only screen and (max-width: 380px) {
+    .filter{
+        display: flex;
+        flex-direction: column;
+        width: 0px 20px;
+    }
+  }
+

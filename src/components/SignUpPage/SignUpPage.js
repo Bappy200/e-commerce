@@ -60,7 +60,7 @@ function SignUpPage() {
                                 <FontAwesomeIcon icon={faEnvelope}/>
                                 <input type="email" {...register("email",
                                   {required: true,
-                                  pattern: /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/})}
+                                  pattern: /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(.\w{2,3})+$/})}
                                 name="email" placeholder="Enter your email address"/>
                               </div>
                               {errors.email && <p>email name is require..</p>}

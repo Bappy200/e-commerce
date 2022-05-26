@@ -4,6 +4,7 @@
     padding: 15px;
     transition: all linear .4s;
     box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%);
+    overflow: hidden;
     
 }
 .cardImage {
@@ -12,9 +13,10 @@
     align-items: center;
     padding-bottom: 15px;
     overflow: hidden;
+    width: inherit;
 }
 .cardImage img{
-    width: 200px;
+    width: 100%;
     transition: all linear .4s;
     cursor: pointer;
 }
@@ -24,7 +26,7 @@
 .cardBody h4{
     width: 200px;
     text-transform: uppercase;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 500;
     color: rgb(7, 6, 6);
 }
@@ -34,7 +36,6 @@
     align-items: center;
 }
 .buyContent p{
-    width: 200px;
     text-transform: capitalize;
     font-size: 16px;
     font-weight: 500;

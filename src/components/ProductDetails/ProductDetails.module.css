@@ -1,6 +1,32 @@
 .productSection{
     margin-top: 50px;
 }
-.productImage img{
+.productDetailsArea h3{
+    font-size: 28px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.productImage{
     width: 100%;
+}
+.stock{
+    font-size: 13px;
+}
+.selectArea{
+    display: flex;
+}
+.selectArea select{
+    padding: 10px;
+    margin-right: 20px;
+    border: 1px solid #ddd;
+    outline: none;
+}
+.quantity{
+    display: flex;
+}
+.quantity svg, .quantity span{
+    border: 1px solid #ddd;
+    margin: 5px;
+    padding: 7px;
+    border-radius: 5px;
 }

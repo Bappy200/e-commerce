@@ -1,33 +1,35 @@
-import React, { createContext, useState } from 'react'
+import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './components/style/style.css'
 import Home from './components/Home/Home';
 import initFontAwesome from './components/Icons/initFontAwesome';
-import {BrowserRouter, Route, Routes} from "react-router-dom"
+import {BrowserRouter, Route, Routes,Navigate} from "react-router-dom"
 import Order from './components/Order/Order';
 import LoginPage from './components/LoginPage/LoginPage';
 import SignUpPage from './components/SignUpPage/SignUpPage';
 import ProductDetails from './components/ProductDetails/ProductDetails';
+import ProductList from './components/ProductList/ProductList';
+import Success from './components/Success/Success';
+import { useSelector } from 'react-redux';
+
 
 initFontAwesome();
-export const MyContext = createContext();
 const App = () => {
-  const [orders, setOrders] = useState([]);
-  
+  const user = useSelector(state => state.user.currentUser);
+  // const da = JSON.parse(localStorage.removeItem("persist:root"))['cart'];
+  // console.log('hello data ', da)
   return (
-    <>
-    <MyContext.Provider value={[orders, setOrders]}>
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<Home/>} />
           <Route path='/order' element={<Order/>}/>
-          <Route path='/login' element={<LoginPage/>}/>
-          <Route path='/signup' element={<SignUpPage/>}/>
-          <Route path='/productDetails' element={<ProductDetails/>}/>
+          <Route path='/login' element={user ? <Navigate to="/" replace/> : <LoginPage/>}/>
+          <Route path='/signup' element={user ? <Navigate to="/" replace/> : <SignUpPage/>}/>
+          <Route path='/productDetails/:id' element={<ProductDetails/>}/>
+          <Route path='/productList/:categroy' element={<ProductList/>} />
+          <Route path="/success" element={<Success/>}/>
         </Routes>
       </BrowserRouter>
-      </MyContext.Provider>
-    </>
   )
 }
 

@@ -1,16 +1,12 @@
 import React from 'react'
-import { Container, Row } from 'react-bootstrap'
-import Card from '../Card/Card'
+import { Container } from 'react-bootstrap'
+import Products from '../Products/Products'
 
 function Watch() {
   return (
     <Container>
           <h2 style={{textTransform:"capitalize"}}>Top sell Watch</h2>
-          <Row style={{gap: "20px 0px", marginTop:"30px"}}>
-              <Card/>
-              <Card/>
-              <Card/>
-          </Row>
+          <Products/>
     </Container>
   )
 }
